@@ -14,7 +14,8 @@ class HomeTableViewCell: UITableViewCell {
     
     @IBOutlet weak var numberLabel: UILabel!
     
-    @IBOutlet weak var descriptionTextView: UITextView!
+    @IBOutlet weak var descriptionLabel: UILabel!
+
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -32,7 +33,7 @@ class HomeTableViewCell: UITableViewCell {
     }
     
     private func update(description: String?){
-        descriptionTextView.text = description ?? ""
+        descriptionLabel.text = description ?? ""
     }
     
     private func update(image: String?){
@@ -56,7 +57,7 @@ class HomeTableViewCell: UITableViewCell {
         cellImageView.image = UIImage(named: "pokeballSVG")
         nameLabel.text = ""
         numberLabel.text = "-"
-        descriptionTextView.text = ""
+        descriptionLabel.text = ""
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

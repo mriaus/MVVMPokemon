@@ -35,28 +35,26 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Description" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="jFh-4D-BdU">
-                                <rect key="frame" x="226" y="69.333333333333314" width="225" height="116.66666666666669"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <color key="textColor" systemColor="labelColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Je-bi-u4z">
+                                <rect key="frame" x="226" y="69.333333333333329" width="225" height="20.333333333333329"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="jFh-4D-BdU" firstAttribute="leading" secondItem="WGt-WY-h6x" secondAttribute="trailing" constant="12" id="ABY-yU-cZF"/>
                             <constraint firstItem="WGt-WY-h6x" firstAttribute="leading" secondItem="ieJ-7s-pkM" secondAttribute="leading" constant="12" id="Bsd-TB-RjD"/>
-                            <constraint firstAttribute="trailing" secondItem="jFh-4D-BdU" secondAttribute="trailing" constant="12" id="J9T-Vv-bP9"/>
-                            <constraint firstAttribute="bottom" secondItem="jFh-4D-BdU" secondAttribute="bottom" constant="32" id="LNd-hM-gXN"/>
                             <constraint firstAttribute="trailing" secondItem="U4A-wh-prW" secondAttribute="trailing" constant="12" id="OsK-rL-3Zl"/>
-                            <constraint firstItem="jFh-4D-BdU" firstAttribute="top" secondItem="B6C-lf-xKA" secondAttribute="bottom" constant="12" id="P8N-7O-Bmd"/>
                             <constraint firstItem="U4A-wh-prW" firstAttribute="leading" secondItem="B6C-lf-xKA" secondAttribute="trailing" constant="-3" id="PWK-dK-WQn"/>
+                            <constraint firstAttribute="trailing" secondItem="6Je-bi-u4z" secondAttribute="trailing" constant="12" id="SXJ-mH-Hp1"/>
                             <constraint firstAttribute="trailing" secondItem="B6C-lf-xKA" secondAttribute="trailing" constant="83" id="Tk8-1a-gpF"/>
                             <constraint firstItem="B6C-lf-xKA" firstAttribute="top" secondItem="ieJ-7s-pkM" secondAttribute="top" constant="37" id="Tuf-sF-FSg"/>
                             <constraint firstItem="WGt-WY-h6x" firstAttribute="top" secondItem="ieJ-7s-pkM" secondAttribute="top" constant="24" id="Uip-2K-DDI"/>
+                            <constraint firstItem="6Je-bi-u4z" firstAttribute="leading" secondItem="WGt-WY-h6x" secondAttribute="trailing" constant="12" id="YOH-LF-NQ9"/>
                             <constraint firstAttribute="trailing" secondItem="WGt-WY-h6x" secondAttribute="trailing" constant="249" id="bbM-Op-3aD"/>
                             <constraint firstAttribute="bottom" secondItem="WGt-WY-h6x" secondAttribute="bottom" constant="24" id="q9b-Tf-IEG"/>
+                            <constraint firstItem="6Je-bi-u4z" firstAttribute="top" secondItem="U4A-wh-prW" secondAttribute="bottom" constant="12" id="qL1-bw-4AD"/>
                             <constraint firstItem="B6C-lf-xKA" firstAttribute="leading" secondItem="WGt-WY-h6x" secondAttribute="trailing" constant="12" id="tqM-1p-9MP"/>
                             <constraint firstItem="U4A-wh-prW" firstAttribute="baseline" secondItem="B6C-lf-xKA" secondAttribute="baseline" id="vnh-nc-Jda"/>
                         </constraints>
@@ -72,7 +70,7 @@
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="cellImageView" destination="WGt-WY-h6x" id="eab-Ax-RPS"/>
-                <outlet property="descriptionTextView" destination="jFh-4D-BdU" id="YYQ-t7-JGC"/>
+                <outlet property="descriptionLabel" destination="6Je-bi-u4z" id="b7Q-TM-Ge8"/>
                 <outlet property="nameLabel" destination="B6C-lf-xKA" id="tFq-6g-xmq"/>
                 <outlet property="numberLabel" destination="U4A-wh-prW" id="NSF-SP-RsK"/>
             </connections>
@@ -81,9 +79,6 @@
     </objects>
     <resources>
         <image name="pokeballSVG" width="800" height="800"/>
-        <systemColor name="labelColor">
-            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

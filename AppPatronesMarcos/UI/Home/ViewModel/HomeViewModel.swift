@@ -28,6 +28,7 @@ class HomeViewModel {
         viewData = mockedData
         viewDelegate?.updateViews()
         
+        
     }
 
     
