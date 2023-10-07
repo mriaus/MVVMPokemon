@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="218" id="KGk-i7-Jjw" customClass="HomeTableViewCell" customModule="AppPatronesMarcos" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="463" height="218"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="463" height="218"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ieJ-7s-pkM">
+                        <rect key="frame" x="0.0" y="0.0" width="463" height="218"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pokeballSVG" translatesAutoresizingMaskIntoConstraints="NO" id="WGt-WY-h6x">
+                                <rect key="frame" x="12" y="24" width="202" height="170"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B6C-lf-xKA">
+                                <rect key="frame" x="226" y="37" width="154" height="20.333333333333329"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U4A-wh-prW">
+                                <rect key="frame" x="377" y="36.333333333333336" width="74" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Description" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="jFh-4D-BdU">
+                                <rect key="frame" x="226" y="69.333333333333314" width="225" height="116.66666666666669"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="jFh-4D-BdU" firstAttribute="leading" secondItem="WGt-WY-h6x" secondAttribute="trailing" constant="12" id="ABY-yU-cZF"/>
+                            <constraint firstItem="WGt-WY-h6x" firstAttribute="leading" secondItem="ieJ-7s-pkM" secondAttribute="leading" constant="12" id="Bsd-TB-RjD"/>
+                            <constraint firstAttribute="trailing" secondItem="jFh-4D-BdU" secondAttribute="trailing" constant="12" id="J9T-Vv-bP9"/>
+                            <constraint firstAttribute="bottom" secondItem="jFh-4D-BdU" secondAttribute="bottom" constant="32" id="LNd-hM-gXN"/>
+                            <constraint firstAttribute="trailing" secondItem="U4A-wh-prW" secondAttribute="trailing" constant="12" id="OsK-rL-3Zl"/>
+                            <constraint firstItem="jFh-4D-BdU" firstAttribute="top" secondItem="B6C-lf-xKA" secondAttribute="bottom" constant="12" id="P8N-7O-Bmd"/>
+                            <constraint firstItem="U4A-wh-prW" firstAttribute="leading" secondItem="B6C-lf-xKA" secondAttribute="trailing" constant="-3" id="PWK-dK-WQn"/>
+                            <constraint firstAttribute="trailing" secondItem="B6C-lf-xKA" secondAttribute="trailing" constant="83" id="Tk8-1a-gpF"/>
+                            <constraint firstItem="B6C-lf-xKA" firstAttribute="top" secondItem="ieJ-7s-pkM" secondAttribute="top" constant="37" id="Tuf-sF-FSg"/>
+                            <constraint firstItem="WGt-WY-h6x" firstAttribute="top" secondItem="ieJ-7s-pkM" secondAttribute="top" constant="24" id="Uip-2K-DDI"/>
+                            <constraint firstAttribute="trailing" secondItem="WGt-WY-h6x" secondAttribute="trailing" constant="249" id="bbM-Op-3aD"/>
+                            <constraint firstAttribute="bottom" secondItem="WGt-WY-h6x" secondAttribute="bottom" constant="24" id="q9b-Tf-IEG"/>
+                            <constraint firstItem="B6C-lf-xKA" firstAttribute="leading" secondItem="WGt-WY-h6x" secondAttribute="trailing" constant="12" id="tqM-1p-9MP"/>
+                            <constraint firstItem="U4A-wh-prW" firstAttribute="baseline" secondItem="B6C-lf-xKA" secondAttribute="baseline" id="vnh-nc-Jda"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="ieJ-7s-pkM" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Ne2-2c-YXO"/>
+                    <constraint firstItem="ieJ-7s-pkM" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="iI4-fg-fUs"/>
+                    <constraint firstAttribute="bottom" secondItem="ieJ-7s-pkM" secondAttribute="bottom" id="jdb-qf-jzl"/>
+                    <constraint firstAttribute="trailing" secondItem="ieJ-7s-pkM" secondAttribute="trailing" id="rP8-Mo-A7d"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="cellImageView" destination="WGt-WY-h6x" id="eab-Ax-RPS"/>
+                <outlet property="descriptionTextView" destination="jFh-4D-BdU" id="YYQ-t7-JGC"/>
+                <outlet property="nameLabel" destination="B6C-lf-xKA" id="tFq-6g-xmq"/>
+                <outlet property="numberLabel" destination="U4A-wh-prW" id="NSF-SP-RsK"/>
+            </connections>
+            <point key="canvasLocation" x="222.13740458015266" y="50"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="pokeballSVG" width="800" height="800"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
