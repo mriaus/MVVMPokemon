@@ -27,8 +27,6 @@ class HomeViewModel {
         //MockedData from Models/Pokemon
         viewData = mockedData
         viewDelegate?.updateViews()
-        
-        
     }
 
     
