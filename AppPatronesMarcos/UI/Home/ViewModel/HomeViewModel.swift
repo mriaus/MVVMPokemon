@@ -48,7 +48,7 @@ extension HomeViewModel: HomeViewModelProtocol{
     
     func onItemSelected(at index: Int) {
         guard let data = data(at: index) else {return }
-        //notificar a la vista que pinte el detalle
+        //notify the view 
         viewDelegate?.navigateToDetail(with: data)
     }
     
